@@ -1,0 +1,58 @@
+[
+    {
+        "font-family": "PANGAIA",
+        "urls": [
+            "/fonts/PANGAIA-Grade_01.woff2"
+        ],
+        "font-style": "normal",
+        "font-weight": "100"
+    },
+    {
+        "font-family": "PANGAIA",
+        "urls": [
+            "/fonts/PANGAIA-Grade_02.woff2"
+        ],
+        "font-style": "normal",
+        "font-weight": "200"
+    },
+    {
+        "font-family": "PANGAIA",
+        "urls": [
+            "/fonts/PANGAIA-Grade_03.woff2"
+        ],
+        "font-style": "normal",
+        "font-weight": "300"
+    },
+    {
+        "font-family": "PANGAIA",
+        "urls": [
+            "/fonts/PANGAIA-Grade_04.woff2"
+        ],
+        "font-style": "normal",
+        "font-weight": "400"
+    },
+    {
+        "font-family": "PANGAIA",
+        "urls": [
+            "/fonts/PANGAIA-Grade_05.woff2"
+        ],
+        "font-style": "normal",
+        "font-weight": "500"
+    },
+    {
+        "font-family": "PANGAIA",
+        "urls": [
+            "/fonts/PANGAIA-Grade_06.woff2"
+        ],
+        "font-style": "normal",
+        "font-weight": "600"
+    },
+    {
+        "font-family": "HW Cigars",
+        "urls": [
+            "/fonts/HW-Cigars_Regular.woff2"
+        ],
+        "font-style": "normal",
+        "font-weight": "400"
+    }
+]
