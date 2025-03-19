@@ -25,7 +25,7 @@ anthropic_claude-3.7-sonnet    27         77         104        25.96%
 openai_chatgpt-4o-latest       8          96         104        7.69%
 ```
 
-These results show that the models have innate limitations in terms of design understanding, which aligns with my intuition. It's hard to imagine that we can have great design products with off-the-shelf current models, as these fundamental limitations would surely leak through to the final output.
+These results show that the models have innate limitations in terms of design understanding, which aligns with my intuition. It's hard to imagine that we can have great design products with off-the-shelf current models, as these fundamental limitations would surely leak through to the final output. Many of us know this intuitively:
 
 <img src="./static/tweet_ben.png" width="500">
 
