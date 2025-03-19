@@ -25,7 +25,11 @@ anthropic_claude-3.7-sonnet    27         77         104        25.96%
 openai_chatgpt-4o-latest       8          96         104        7.69%
 ```
 
-These results show that the models have innate limitations in terms of design understanding, which aligns with my intuition. It's hard to imagine that we can have great design products with off-the-shelf current models, as these fundamental limitations would surely leak through to the final output. The gap between human designers' visual perception and AI models' understanding of design details remains substantial, even with state-of-the-art systems.
+These results show that the models have innate limitations in terms of design understanding, which aligns with my intuition. It's hard to imagine that we can have great design products with off-the-shelf current models, as these fundamental limitations would surely leak through to the final output.
+
+<img src="./static/tweet_ben.png" width="500">
+
+The gap between human designers' visual perception and AI models' understanding of design details remains substantial, even with state-of-the-art systems.
 
 
 ## How it works?
