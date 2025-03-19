@@ -334,7 +334,7 @@ UIBench uses code-level verification, so let's discuss how it solves these probl
 
 In order to solve Ambiguity problem we do 3 things:
 
-1. Manually craft the examples so that there can be **only one** CSS property responsible for a design error. Let's say we introduce a design error, an incorrect gap between cards in a grid - `1px` instead of `32px`, and we implement it via modifying `gap` CSS property of the parent component. In that case, we make sure that the error can't be reverted by setting `margin-left`, `margin-right`, `padding-left` or `padding-right` of the card component, those CSS properties do not exist in the stylesheet
+1. Manually craft the examples so that there can be **only one** CSS property responsible for a design error. For example, if we introduce an incorrect gap between cards in a grid - `1px` instead of `32px` via the `gap` CSS property of the parent component, we ensure no other CSS property can be used to change this gap. In a normal scenario, you could alternatively use `margin-left`, `margin-right`, `padding-left` or `padding-right` of the child card components, which is why our test cases are built so that such alternative properties simply do not exist in the stylesheet.
 2. We introduce the following constraint in the prompt: 
     > Model can only change values of existing CSS properties. It can't modify HTML, nor add/remove CSS properties.
 
