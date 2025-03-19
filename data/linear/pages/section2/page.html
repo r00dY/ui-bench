@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Solution Driven Styles</title>
+
+    <link rel="stylesheet" href="/linear/global.css">
+
+    <style id="page-styles">
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.twoCards {
+    display: flex;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.1);;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.card {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 50%;
+}
+
+.card--first {
+    padding-right: 48px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(255, 255, 255, 0.1);;
+}
+
+.card--second {
+    padding-left: 48px;
+}
+
+.card__image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.card__title {
+    font-family: 'Inter Variable';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.card__description {
+    font-family: 'Inter Variable';
+    color: rgb(180, 188, 208);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="twoCards">
+            <div class="card card--first">
+                <img src="/linear/images/quick-filters-2.png" alt="Card 1" class="card__image">
+                <h4 class="card__title">Actionable quick filters</h4>
+                <p class="card__description">
+                    Drill down on any data point to get an instant view of all the underlying issues and immediately take action.
+                </p>
+            </div>
+            <div class="card card--second">
+                <img src="/linear/images/zoom-out-2.png" alt="Card 1" class="card__image">
+                <h4 class="card__title">Zoom out to narrow in</h4>
+                <p class="card__description">
+                    Get a high-level view of everything that is happening in your workspace. Identify which areas need your attention and make better decisions.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

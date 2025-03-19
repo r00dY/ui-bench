@@ -1,0 +1,8 @@
+{
+    "reasoning": "The title 'Activate Insights for your team' appears smaller in the incorrect design compared to the correct design. The font size must be increased to match the correct design.",
+    "css_changes": {
+        ".bannerCentered__title": {
+            "font-size": "32px"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "variants": [
+    {
+      "id": "grid-zero-gap",
+      "css_changes": {
+        ".collection": {
+          "gap": "0px"
+        }
+      }
+    },
+    {
+      "id": "grid-large-gap",
+      "css_changes": {
+        ".collection": {
+          "gap": "40px"
+        }
+      }
+    },
+    {
+      "id": "grid-layout",
+      "css_changes": {
+        ".collection__image--large": {
+          "grid-column-start": "1",
+          "grid-column-end": "3"
+        }
+      }
+    },
+    {
+      "id": "image-aspect-ratio",
+      "css_changes": {
+        ".collection__image": {
+          "aspect-ratio": "1/1"
+        }
+      }
+    },
+    {
+      "id": "container-not-full-width",
+      "css_changes": {
+        ".container": {
+          "max-width": "1200px"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "reasoning": "Looking at both designs, I noticed that in the incorrect version, the font family for the hero__title is set to 'sans-serif' instead of 'Apercu'. This causes the title 'Milky Jelly Cleansing Balm' to appear in a generic sans-serif font rather than the Apercu font that's used throughout the rest of the page. The correct version shows all text using the Apercu font family, creating a consistent typographic design.",
+    "css_changes": {
+        ".hero__title": {
+            "font-family": "'Apercu', sans-serif"
+        }
+    }
+}

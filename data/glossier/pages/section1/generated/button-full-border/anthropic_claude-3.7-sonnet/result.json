@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .buttonLink -> border-top-width, .buttonLink -> border-left-width, unneccessary: .buttonLink -> background-color"
+}

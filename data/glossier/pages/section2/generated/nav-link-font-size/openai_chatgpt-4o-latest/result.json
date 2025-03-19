@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .header__link -> font-size, unneccessary: .header__logo -> width"
+}

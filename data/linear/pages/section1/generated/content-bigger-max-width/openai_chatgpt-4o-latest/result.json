@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .banner__content -> max-width, unneccessary: .banner__content -> align-items"
+}

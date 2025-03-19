@@ -1,0 +1,8 @@
+{
+    "reasoning": "The font used for the .hero__title in the incorrect design appears to be a generic sans-serif font instead of 'Apercu'. This is causing the text to look different from the correct design. The incorrect CSS specifies 'sans-serif' instead of 'Apercu', which needs to be fixed.",
+    "css_changes": {
+        ".hero__title": {
+            "font-family": "'Apercu', sans-serif"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design has a less pronounced background blur effect compared to the correct design. The blur in the incorrect design appears weaker, making the background more visible. This is due to the 'filter: blur(140px);' value in the '.bannerCentered__backgroundBlur' class. In the correct design, the blur is stronger, enhancing the overlay effect. To match the correct design, the blur value should be increased.",
+    "css_changes": {
+        ".bannerCentered__backgroundBlur": {
+            "filter": "blur(180px)"
+        }
+    }
+}

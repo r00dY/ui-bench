@@ -1,0 +1,172 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Discover Solution Driven Styles
+  </title>
+  <style id="global-styles">
+   @font-face {
+  font-family: "Inter Variable";
+  src: url("/linear/fonts/InterVariable.woff2");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Inter Variable";
+  src: url("/linear/fonts/InterVariable-Italic.woff2");
+  font-style: italic;
+  font-weight: 100 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #000212;
+}
+  </style>
+  <style id="page-styles">
+   .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bannerCentered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerCentered__background {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: auto;
+}
+
+.bannerCentered__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+}
+
+.bannerCentered__title {
+    font-family: "Inter Variable";
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.111;
+    color: #f7f8f8;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.bannerCentered__description {
+    font-family: "Inter Variable";
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: rgb(180, 188, 208);
+    text-align: center;
+}
+
+.bannerCentered__backgroundBlur {
+    position: absolute;
+    inset: 0px;
+    opacity: 0.6;
+    filter: blur(140px);
+    background: radial-gradient(ellipse 200px 200px at 30% 40%, #3360ff, transparent), radial-gradient(200px 200px at 70% 60%, #3360ff, transparent);
+}
+
+.link {
+    font-weight: 500;
+    color: rgb(130, 143, 255);
+    text-decoration-line: none;
+}
+
+.bannerCentered__buttonGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.buttonLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Inter Variable";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration-line: none;
+    color: white;
+    height: 48px;
+    background-color: #5e6ad2;
+    border-radius: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.buttonLink--secondary {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-width: .5px;
+    border-style: solid;
+}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="bannerCentered">
+    <img class="bannerCentered__background" src="/linear/images/background-universe.webp"/>
+    <div class="bannerCentered__backgroundBlur">
+    </div>
+    <div class="bannerCentered__content">
+     <h3 class="bannerCentered__title">
+      Activate Insights
+      <br/>
+      for your team
+     </h3>
+     <p class="bannerCentered__description">
+      Insights is available on the
+      <a class="link" href="#">
+       Linear Business
+      </a>
+      plan.
+      <br/>
+      Upgrade today or get in touch with our Sales team.
+     </p>
+     <div class="bannerCentered__buttonGroup">
+      <a class="buttonLink buttonLink--primary" href="#">
+       Get started
+      </a>
+      <a class="buttonLink buttonLink--secondary" href="#">
+       Talk to sales
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

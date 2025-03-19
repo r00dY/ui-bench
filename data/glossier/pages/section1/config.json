@@ -1,0 +1,133 @@
+{
+    "variants": [
+        {
+            "id": "title-font",
+            "css_changes": {
+                ".hero__title": {
+                    "font-family": "sans-serif"
+                }
+            }
+        },
+        {
+            "id": "subtitle-font",
+            "css_changes": {
+                ".hero__subtitle": {
+                    "font-family": "sans-serif"
+                }
+            }
+        },
+        {
+            "id": "description-font",
+            "css_changes": {
+                ".hero__description": {
+                    "font-family": "sans-serif"
+                }
+            }
+        },
+        {
+            "id": "image-aspect-ratio",
+            "css_changes": {
+                ".hero__image": {
+                    "aspect-ratio": "21/9"
+                }
+            }
+        },
+        {
+            "id": "logo-bottom-padding-low",
+            "css_changes": {
+                ".hero__logo": {
+                    "bottom": "-16px"
+                }
+            }
+        },
+        {
+            "id": "logo-bottom-padding-high",
+            "css_changes": {
+                ".hero__logo": {
+                    "bottom": "64px"
+                }
+            }
+        },
+        {
+            "id": "card-background-color",
+            "css_changes": {
+                ".hero__content": {
+                    "background-color": "#e8e8e8"
+                }
+            }
+        },
+        {
+            "id": "card-offset-large",
+            "css_changes": {
+                ".hero__content": {
+                    "top": "40px",
+                    "left": "40px"
+                }
+            }
+        },
+        {
+            "id": "card-offset-small",
+            "css_changes": {
+                ".hero__content": {
+                    "top": "2px",
+                    "left": "2px"
+                }
+            }
+        },
+        {
+            "id": "card-padding-small",
+            "css_changes": {
+                ".hero__content": {
+                    "padding-left": "8px",
+                    "padding-right": "8px",
+                    "padding-top": "8px",
+                    "padding-bottom": "8px"
+                }
+            }
+        },
+        {
+            "id": "button-full-border",
+            "css_changes": {
+                ".buttonLink": {
+                    "border-left-width": "1px",
+                    "border-top-width": "1px"
+                }
+            }
+        },
+        {
+            "id": "button-border-inverse",
+            "css_changes": {
+                ".buttonLink": {
+                    "border-left-width": "1px",
+                    "border-top-width": "1px",
+                    "border-right-width": "0px",
+                    "border-bottom-width": "0px"
+                }
+            }
+        },
+        {
+            "id": "button-background-color",
+            "css_changes": {
+                ".buttonLink": {
+                    "background-color": "white"
+                }
+            }
+        },
+        {
+            "id": "title-margin-large",
+            "css_changes": {
+                ".hero__title": {
+                    "margin-bottom": "28px"
+                }
+            }
+        },
+        {
+            "id": "title-margin-small",
+            "css_changes": {
+                ".hero__title": {
+                    "margin-bottom": "2px"
+                }
+            }
+        }
+    ]
+}

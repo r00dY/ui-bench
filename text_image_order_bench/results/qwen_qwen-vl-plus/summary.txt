@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: qwen/qwen-vl-plus
+  Total tests: 100
+  Successful tests: 100 (100.00%)
+  Correct tests: 77 (77.00%)
+
+Results saved to results/qwen_qwen-vl-plus/results.json

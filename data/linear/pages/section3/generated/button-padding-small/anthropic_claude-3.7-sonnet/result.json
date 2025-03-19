@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .buttonLink -> padding-left:\nExpected (reference): 18px\nGot (corrected): 24px"
+}

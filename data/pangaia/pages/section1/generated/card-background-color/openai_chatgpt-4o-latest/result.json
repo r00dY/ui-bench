@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "invalid_css_changes",
+  "error_details": "CSS changes validation failed:\n- Properties not in correct_css: .card -> background-color"
+}

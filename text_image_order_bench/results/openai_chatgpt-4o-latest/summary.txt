@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: openai/chatgpt-4o-latest
+  Total tests: 100
+  Successful tests: 100 (100.00%)
+  Correct tests: 100 (100.00%)
+
+Results saved to results/openai_chatgpt-4o-latest/results.json

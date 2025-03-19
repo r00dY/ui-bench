@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .card -> padding-bottom, .twoCards -> padding-top, .twoCards -> padding-bottom, .card -> padding-top, unneccessary: .card--first -> border-right-color, .card--first -> padding-right"
+}

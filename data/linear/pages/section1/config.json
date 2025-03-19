@@ -1,0 +1,101 @@
+{
+  "variants": [
+    {
+      "id": "content-smaller-max-width",
+      "css_changes": {
+        ".banner__content": {
+          "max-width": "500px"
+        }
+      }
+    },
+    {
+      "id": "content-bigger-max-width",
+      "css_changes": {
+        ".banner__content": {
+          "max-width": "auto"
+        }
+      }
+    },
+    {
+      "id": "layout-no-absolute-position",
+      "css_changes": {
+        ".banner__content": {
+          "position": "relative"
+        }
+      }
+    },
+    {
+      "id": "container-too-large-max-width",
+      "css_changes": {
+        ".container": {
+          "max-width": "1400px"
+        }
+      }
+    },
+    {
+      "id": "title-too-large",
+      "css_changes": {
+        ".banner__title": {
+          "font-size": "48px"
+        }
+      }
+    },
+    {
+      "id": "title-too-small",
+      "css_changes": {
+        ".banner__title": {
+          "font-size": "16px"
+        }
+      }
+    },
+    {
+      "id": "description-too-large",
+      "css_changes": {
+        ".banner__description": {
+          "font-size": "24px"
+        }
+      }
+    },
+    {
+      "id": "description-too-small",
+      "css_changes": {
+        ".banner__description": {
+          "font-size": "12px"
+        }
+      }
+    },
+    {
+      "id": "description-line-height-too-small",
+      "css_changes": {
+        ".banner__description": {
+          "line-height": "1.1"
+        }
+      }
+    },
+    {
+      "id": "description-color",
+      "css_changes": {
+        ".banner__description": {
+          "color": "white"
+        }
+      }
+    },
+    {
+      "id": "content-align",
+      "css_changes": {
+        ".banner__content": {
+          "align-items": "center"
+        }
+      }
+    },
+    {
+      "id": "content-position",
+      "css_changes": {
+        ".banner__content": {
+          "top": "0",
+          "bottom": "auto"
+        }
+      }
+    }
+  ]
+}

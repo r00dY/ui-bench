@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/glossier/global.css">
+
+    <style id="page-styles">
+
+        .header {
+            position: relative;
+        }
+
+        .header__notificationBar {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: #000;
+            color: #fff;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .link {
+            color: currentColor;
+            text-decoration-line: underline;
+        }
+
+        .header__notificationBar-content {
+            font-family: 'Apercu', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        .header__notificationBar-button {
+            all: unset;
+            color: currentColor;
+        }
+
+        .header__notificationBar-button--play {
+            display: none;
+        }
+
+        .header__notificationBar-button--pause {
+            display: block;
+        }
+
+        .header__main {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        .header__logo {
+            width: 68px;
+            height: auto;
+        }   
+
+        .header__links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header__link {
+            font-family: 'Apercu', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1;
+            color: black;
+            text-decoration-line: none;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header__link:hover {
+            text-decoration-line: underline;
+        }
+
+        .header__links--actions {
+            justify-content: flex-end;
+        }
+
+    </style>
+</head>
+
+<body class="body--no-padding">
+    <header class="header">
+
+        <div class="header__notificationBar header__notificationBar--playing">
+            <div class="header__notificationBar-content">
+                Get our Super Pure do-it-all serum on us with your qualifying order! <a class="link" href="#">Terms apply.</a>
+            </div>
+            <div class="header__notificationBar-buttons">
+                <button class="header__notificationBar-button header__notificationBar-button--play"><img src="/glossier/images/video-play-white.svg" alt="Play"></button>
+                <button class="header__notificationBar-button header__notificationBar-button--pause"><img src="/glossier/images/video-pause-white.svg" alt="Pause"></button>
+            </div>
+        </div>
+
+        <div class="header__main">
+
+            <img class="header__logo" src="/glossier/images/logo_small.svg" alt="Glossier">
+            <div class="header__links">
+                <a href="/collections/skincare" class="header__link">Skincare</a>
+                <a href="/collections/makeup" class="header__link">Makeup</a>
+                <a href="/collections/balms" class="header__link">Balms</a>
+                <a href="/collections/body" class="header__link">Body</a>
+                <a href="/collections/fragrance" class="header__link">Fragrance</a>
+                <a href="/collections/glossier-goods" class="header__link">Glossier Goods</a>
+                <a href="/collections/sets" class="header__link">Sets</a>
+            </div>
+
+            <div class="header__links header__links--actions">
+                <a href="/language" class="header__link"><img src="/glossier/images/globe.svg" alt="PL" width="12" height="13"> PL</a>
+                <a href="/search" class="header__link">Search</a>
+                <a href="/stores" class="header__link">Stores</a>
+                <a href="/login" class="header__link">Log in</a>
+                <a href="/bag" class="header__link">Bag (0)</a>
+            </div>
+
+      </header>
+</body>
+
+</html>

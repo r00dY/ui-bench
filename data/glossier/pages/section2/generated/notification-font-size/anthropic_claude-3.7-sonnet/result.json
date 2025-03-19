@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .header__notificationBar-content -> font-size, unneccessary: .header__links -> gap"
+}

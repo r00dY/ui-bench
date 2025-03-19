@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: anthropic/claude-3.7-sonnet
+  Total tests: 100
+  Successful tests: 100 (100.00%)
+  Correct tests: 100 (100.00%)
+
+Results saved to results/anthropic_claude-3.7-sonnet/results.json

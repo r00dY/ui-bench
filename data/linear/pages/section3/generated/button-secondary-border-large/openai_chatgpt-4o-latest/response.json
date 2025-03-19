@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design has a visibly weaker background blur effect compared to the correct design. This is due to an insufficient blur intensity applied to the '.bannerCentered__backgroundBlur' element. The blur filter should be increased to properly match the intended softened, diffused background effect.",
+    "css_changes": {
+        ".bannerCentered__backgroundBlur": {
+            "filter": "blur(240px)"
+        }
+    }
+}

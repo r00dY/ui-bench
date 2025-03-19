@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .bannerCentered__title -> font-size:\nExpected (reference): 56px\nGot (corrected): 72px"
+}

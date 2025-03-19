@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .buttonLink -> border-left-width, .buttonLink -> border-top-width, unneccessary: .hero__content -> top"
+}

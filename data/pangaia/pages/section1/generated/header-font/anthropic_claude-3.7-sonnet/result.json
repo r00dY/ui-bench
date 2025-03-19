@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .header__title -> font-size, .header__title -> font-family, unneccessary: .cardsGrid -> gap"
+}

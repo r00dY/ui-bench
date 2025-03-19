@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .card__title -> font-size, .card__description -> font-size, unneccessary: .twoCards -> padding-top, .card__title -> font-weight, .twoCards -> padding-bottom"
+}

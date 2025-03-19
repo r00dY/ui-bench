@@ -1,151 +1,73 @@
-from dotenv import load_dotenv
-load_dotenv()
-
-import base64
+import json
 import os
-from openai import OpenAI
+import argparse
+from run_html import run_html
+from run_screenshot import run_screenshot
+from run_eval import run_eval
+import asyncio
+import sys
 
-client = OpenAI()
+async def run():
+    parser = argparse.ArgumentParser(description='Run evaluation')
+    parser.add_argument('command', choices=['html', 'screenshot', 'eval'], help='Command to execute')
+    parser.add_argument('testcase', help='Test case')
+    parser.add_argument('--test', action='store_true', default=False, help='Run with test config data')
+    parser.add_argument('--model', help='Model to use for evaluation (required for eval command)')
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import time
+    args = parser.parse_args()
 
-# Setup Chrome options
-chrome_options = Options()
-chrome_options.add_argument("--headless")  # Run in headless mode
-chrome_options.add_argument("--window-size=1536,1000")  # Set window size
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
+    if (args.command == "eval" and not args.model):
+        print("Error: 'model' argument is required for 'eval' command")
+        sys.exit(1)
 
-# Initialize driver
-driver = webdriver.Chrome(options=chrome_options)
-
-
-
-# Function to encode the image
-def encode_image(image_path):
-    with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode("utf-8")
-
-def run():
-
-    design_system_preview_path = "data/pangaia/section1/design_system_preview.png"
-    preview_path = "data/pangaia/section1/preview.png"
-
-    design_system_preview_base64 = encode_image(design_system_preview_path)
-    preview_base64 = encode_image(preview_path)
-
-    # Load design system HTML
-    with open("data/pangaia/section1/design_system.html", "r") as f:
-        design_system_code = f.read()
-
-
-
-
-
-
-    response = client.chat.completions.create(
-        model="chatgpt-4o-latest",
-        messages=[
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": """You're a designer that knows how to code.
-
-<objective>
-You'll be given an image of a section of a website (rendered at 1536px wide screen size). Your job is to write the HTML and CSS for the section so that, when rendered, it looks exactly like the image.
-- Return JUST HTML with inline CSS. I want to copy the response, paste into file.html and be able to preview. Do not add any extra markdown formatting. Just paste raw HTML/CSS. 
-- For images, fonts, colors and icons, follow the instructions from <design_system_instructions>.
-</objective>
-
-<design_system_instructions>
-All the images, fonts, colors and icons that you need are in an attached design system page. We give HTML of the design system page in <design_system_page>. Also, we're adding an image of the design system page so that you can see how things look (rendered at 1536px wide screen size, exactly the same as the section preview image).
-</design_system_instructions>
-
-<design_system_page>
-{design_system_code}
-</design_system_page>
-
-Design system page preview image:
-""",
-                    },
-                    {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:image/jpeg;base64,{design_system_preview_base64}",
-                            "detail": "high"
-                        },
-                    },
-                    {
-                        "type": "text",
-                        "text": """Section preview (the one you're supposed to write the HTML and CSS for):""",
-                    },
-                    {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:image/jpeg;base64,{preview_base64}", 
-                            "detail": "high"
-                        },
-                    }
-                ],
-            }
-        ],
-    )
-
-    # Extract just the HTML content
-    content = response.choices[0].message.content
+    def parse_testcase(testcase: str) -> list[tuple[str, str, str]]:
+        result = []
+        for tc in testcase.split(','):
+            parts = tc.strip().split('.')
+            project = parts[0]
+            
+            if len(parts) == 1:
+                pages_dir = os.path.join('data', project, 'pages')
+                pages = [d for d in os.listdir(pages_dir) if os.path.isdir(os.path.join(pages_dir, d))]
+            else:
+                pages = [parts[1]]
+                
+            for page in pages:
+                config_path = os.path.join('data', project, 'pages', page, 'config.json')
+                with open(config_path) as f:
+                    config_dict = json.load(f)
+                
+                variants = [parts[2]] if len(parts) == 3 else [v['id'] for v in config_dict.get('variants', [])]
+                
+                # Add reference variant if using wildcard in html/screenshot commands
+                if args.command in ["html", "screenshot"] and len(parts) < 3:
+                    variants.append("reference")
+                    
+                result.extend((project, page, variant) for variant in variants)
+        return result
     
-    # Find start and end of HTML
-    start = content.find("<html")
-    end = content.find("</html>") + 7
+    testcases = parse_testcase(args.testcase)
     
-    if start >= 0 and end >= 0:
-        content = content[start:end]
-
-
-    # Find next available iteration number
-    section_dir = "data/pangaia/section1"
-    iteration = 1
-    while os.path.exists(os.path.join(section_dir, f"iteration{iteration}_output1.html")):
-        iteration += 1
-
-    filename = f"iteration{iteration}_output1.html"
-
-    # Save response to iterationX_output1.html
-    output_path = os.path.join(section_dir, filename)
-    with open(output_path, "w") as f:
-        f.write(content)
-
-    # Take screenshot of the generated HTML
-    render_html_file(os.path.join(section_dir, filename))
-
-    
-
-def render_html_file(html_file_path):
-    # Get just the filename for the URL
-    base_filename = os.path.basename(html_file_path)
-    
-    # Set window size to 1536px width
-    driver.set_window_size(1536, 1000)
-    
-    # Load the page
-    url = f"http://localhost:8000/{base_filename}"
-    driver.get(url)
-    
-    # Wait for page to load
-    time.sleep(2)
-    
-    # Take screenshot with same path but .png extension
-    screenshot_path = html_file_path.replace('.html', '.png')
-    driver.save_screenshot(screenshot_path)
-    
-    # Cleanup
-    driver.quit()
-
+    if args.command in ["eval", "screenshot"]:
+        # Run all tasks in parallel
+        tasks = []
+        for project_id, page_id, variant_id in testcases:
+            print (f"[{args.command}] {project_id}.{page_id}.{variant_id} - started")
+            if args.command == "eval":
+                tasks.append(run_eval(project_id, page_id, variant_id, args.model, args.test))
+            else:  # screenshot
+                tasks.append(run_screenshot(project_id, page_id, variant_id))
+        
+        # Wait for all tasks to complete
+        if tasks:
+            await asyncio.gather(*tasks)
+            
+    else:
+        # Run html tasks sequentially
+        for project_id, page_id, variant_id in testcases:
+            if args.command == "html":
+                print ("[html] " + project_id + "." + page_id + "." + variant_id)
+                run_html(project_id, page_id, variant_id)
 
 if __name__ == "__main__":
-    # run()
-    render_html_file("data/pangaia/section1/iteration1_output1.html")
+    asyncio.run(run())

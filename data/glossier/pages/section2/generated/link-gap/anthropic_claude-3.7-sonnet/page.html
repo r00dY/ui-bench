@@ -1,0 +1,260 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style id="global-styles">
+   @font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Light.woff?v=20913981759846774721738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-LightItalic.woff?v=68446011202050247651738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu.woff?v=27749520405110232131738248833') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Italic.woff?v=167501330633256636311738248833') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Medium.woff?v=135256279722417433531738248833') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-MediumItalic.woff?v=166049247236756587401738248833') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Bold.woff?v=77441056927343755651738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-BoldItalic.woff?v=182358319762879638931738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu Mono';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Mono.woff?v=95926578357820724491738248833') format('woff2');
+    font-weight: 400 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-bold.woff2?v=1652966868') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-medium.woff2?v=1679586878') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-regular.woff2?v=1652966868') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.body--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+  </style>
+  <style id="page-styles">
+   .header {
+    position: relative;
+}
+
+.header__notificationBar {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: currentColor;
+    text-decoration-line: underline;
+}
+
+.header__notificationBar-content {
+    font-family: 'Apercu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.header__notificationBar-button {
+    all: unset;
+    color: currentColor;
+}
+
+.header__notificationBar-button--play {
+    display: none;
+}
+
+.header__notificationBar-button--pause {
+    display: block;
+}
+
+.header__main {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header__logo {
+    width: 68px;
+    height: auto;
+}
+
+.header__links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__link {
+    font-family: 'Apercu', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    color: black;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header__link:hover {
+    text-decoration-line: underline;
+}
+
+.header__links--actions {
+    justify-content: flex-end;
+}
+  </style>
+ </head>
+ <body class="body--no-padding">
+  <header class="header">
+   <div class="header__notificationBar header__notificationBar--playing">
+    <div class="header__notificationBar-content">
+     Get our Super Pure do-it-all serum on us with your qualifying order!
+     <a class="link" href="#">
+      Terms apply.
+     </a>
+    </div>
+    <div class="header__notificationBar-buttons">
+     <button class="header__notificationBar-button header__notificationBar-button--play">
+      <img alt="Play" src="/glossier/images/video-play-white.svg"/>
+     </button>
+     <button class="header__notificationBar-button header__notificationBar-button--pause">
+      <img alt="Pause" src="/glossier/images/video-pause-white.svg"/>
+     </button>
+    </div>
+   </div>
+   <div class="header__main">
+    <img alt="Glossier" class="header__logo" src="/glossier/images/logo_small.svg"/>
+    <div class="header__links">
+     <a class="header__link" href="/collections/skincare">
+      Skincare
+     </a>
+     <a class="header__link" href="/collections/makeup">
+      Makeup
+     </a>
+     <a class="header__link" href="/collections/balms">
+      Balms
+     </a>
+     <a class="header__link" href="/collections/body">
+      Body
+     </a>
+     <a class="header__link" href="/collections/fragrance">
+      Fragrance
+     </a>
+     <a class="header__link" href="/collections/glossier-goods">
+      Glossier Goods
+     </a>
+     <a class="header__link" href="/collections/sets">
+      Sets
+     </a>
+    </div>
+    <div class="header__links header__links--actions">
+     <a class="header__link" href="/language">
+      <img alt="PL" height="13" src="/glossier/images/globe.svg" width="12"/>
+      PL
+     </a>
+     <a class="header__link" href="/search">
+      Search
+     </a>
+     <a class="header__link" href="/stores">
+      Stores
+     </a>
+     <a class="header__link" href="/login">
+      Log in
+     </a>
+     <a class="header__link" href="/bag">
+      Bag (0)
+     </a>
+    </div>
+   </div>
+  </header>
+ </body>
+</html>

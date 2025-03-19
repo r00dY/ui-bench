@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .banner__content -> bottom:\nExpected (reference): 0px\nGot (corrected): 40px"
+}

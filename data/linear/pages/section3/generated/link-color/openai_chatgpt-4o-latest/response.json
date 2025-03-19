@@ -1,0 +1,8 @@
+{
+    "reasoning": "The background blur effect in the incorrect design appears weaker compared to the correct design. This is due to the 'filter: blur(140px);' property in '.bannerCentered__backgroundBlur' being too low. Increasing the blur effect to 'filter: blur(200px);' matches the correct design.",
+    "css_changes": {
+        ".bannerCentered__backgroundBlur": {
+            "filter": "blur(200px)"
+        }
+    }
+}

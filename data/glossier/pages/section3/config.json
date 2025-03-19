@@ -1,0 +1,60 @@
+{
+    "variants": [
+        {
+            "id": "layout",
+            "css_changes": {
+                ".reviewBanner": {
+                    "grid-template-columns": "1fr 1fr"
+                }
+            }   
+        },
+        {
+            "id": "description-font-weight",
+            "css_changes": {
+                ".reviewBanner__description": {
+                    "font-weight": "600"
+                }
+            }
+        },
+        {
+            "id": "description-line-height",
+            "css_changes": {
+                ".reviewBanner__description": {
+                    "line-height": "1"
+                }
+            }
+        },
+        {
+            "id": "button-margin",
+            "css_changes": {
+                ".buttonLink": {
+                    "margin-bottom": "12px"
+                }
+            }
+        },
+        {
+            "id": "stars-margin",
+            "css_changes": {
+                ".reviewBanner__score": {
+                    "gap": "0px"
+                }
+            }
+        },
+        {
+            "id": "text-max-width",
+            "css_changes": {
+                ".reviewBanner__reviewText": {
+                    "max-width": "350px"
+                }
+            }
+        },
+        {
+            "id": "review-text-font-size",
+            "css_changes": {
+                ".reviewBanner__reviewText": {
+                    "font-size": "16px"
+                }
+            }
+        }
+    ]
+}

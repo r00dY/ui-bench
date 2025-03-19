@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .hero__description -> font-family, unneccessary: .hero__content -> top"
+}

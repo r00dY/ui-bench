@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: meta-llama/llama-3.3-70b-instruct
+  Total tests: 100
+  Successful tests: 100 (100.00%)
+  Correct tests: 78 (78.00%)
+
+Results saved to results/meta-llama_llama-3.3-70b-instruct/results.json

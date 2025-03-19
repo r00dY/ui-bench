@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: openai/o1-mini
+  Total tests: 100
+  Successful tests: 94 (94.00%)
+  Correct tests: 62 (62.00%)
+
+Results saved to results/openai_o1-mini/results.json

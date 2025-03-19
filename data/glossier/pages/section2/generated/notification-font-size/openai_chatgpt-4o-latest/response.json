@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design shows the 'Glossier' logo in a regular font, while the correct design displays it in an italic font. This indicates that the font-style property of the '.header__logo' class is incorrect and needs to be set to 'italic'.",
+    "css_changes": {
+        ".header__logo": {
+            "font-style": "italic"
+        }
+    }
+}

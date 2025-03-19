@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design has a background blur that is too weak compared to the correct design. The backdrop-filter blur on .bannerCentered__content is currently set to 1px, making the background less diffused. In the correct design, the blur effect is stronger, providing better contrast between the text and the background. Increasing the blur value will resolve the issue.",
+    "css_changes": {
+        ".bannerCentered__content": {
+            "backdrop-filter": "blur(10px)"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: google/gemma-3-27b-it
+  Total tests: 100
+  Successful tests: 91 (91.00%)
+  Correct tests: 81 (81.00%)
+
+Results saved to results/google_gemma-3-27b-it/results.json

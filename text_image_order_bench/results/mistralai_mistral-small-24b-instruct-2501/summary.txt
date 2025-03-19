@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: mistralai/mistral-small-24b-instruct-2501
+  Total tests: 100
+  Successful tests: 67 (67.00%)
+  Correct tests: 27 (27.00%)
+
+Results saved to results/mistralai_mistral-small-24b-instruct-2501/results.json

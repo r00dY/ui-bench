@@ -1,0 +1,31 @@
+
+@font-face {
+  font-family: "Inter Variable";
+  src: url("/linear/fonts/InterVariable.woff2");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Inter Variable";
+  src: url("/linear/fonts/InterVariable-Italic.woff2");
+  font-style: italic;
+  font-weight: 100 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #000212;
+}

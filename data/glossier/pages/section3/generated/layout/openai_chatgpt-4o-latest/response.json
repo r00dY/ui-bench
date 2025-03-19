@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design has the image appearing smaller than it should be. In the correct design, the image takes up more space and maintains a proportional appearance. This suggests that the issue is related to the 'width' or 'max-width' of the '.reviewBanner__image'. The incorrect CSS likely sets 'width: 100%', but it should be set to 'width: auto' with 'max-width: 100%' to maintain the correct proportions.",
+    "css_changes": {
+        ".reviewBanner__image": {
+            "width": "auto"
+        }
+    }
+}

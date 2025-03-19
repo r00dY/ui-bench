@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .hero__content -> top:\nExpected (reference): 28px\nGot (corrected): 16px"
+}

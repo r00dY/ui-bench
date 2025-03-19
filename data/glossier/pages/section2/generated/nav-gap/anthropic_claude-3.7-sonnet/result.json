@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .header__links -> gap:\nExpected (reference): 16px\nGot (corrected): 24px"
+}

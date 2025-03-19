@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .link -> text-decoration-line, unneccessary: .cardsGrid -> gap"
+}

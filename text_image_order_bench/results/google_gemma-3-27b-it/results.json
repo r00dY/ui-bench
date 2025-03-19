@@ -1,0 +1,2509 @@
+[
+    {
+        "id": 1,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 2,
+        "correct": true,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 3,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 4,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 5,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 6,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 7,
+        "correct": true,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 8,
+        "correct": true,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 9,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 10,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 11,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 12,
+        "correct": true,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 13,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Provider returned error",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 14,
+        "correct": true,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 15,
+        "correct": true,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 16,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 17,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 18,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 19,
+        "correct": true,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 20,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 21,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 22,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 23,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 24,
+        "correct": true,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 25,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 26,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 27,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 28,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 29,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 30,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 31,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Provider returned error",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 32,
+        "correct": true,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 33,
+        "correct": true,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 34,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 35,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 36,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 37,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 38,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 39,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 40,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 41,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 42,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 43,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 44,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 45,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 46,
+        "correct": true,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 47,
+        "correct": true,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 48,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 49,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 50,
+        "correct": true,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 51,
+        "correct": true,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 52,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 53,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Provider returned error",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 54,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Provider returned error",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 55,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 56,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Provider returned error",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 57,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 58,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Upstream error from Parasail: Engine loop is not running. Inspect the stacktrace to find the original error: TypeError('isinstance() argument 2 cannot be a parameterized generic').",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 59,
+        "correct": true,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 60,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 61,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 62,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 63,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 64,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Provider returned error",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 65,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 66,
+        "correct": true,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 67,
+        "correct": true,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 68,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 69,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 70,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 71,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "pig"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 72,
+        "correct": true,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 73,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 74,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 75,
+        "correct": true,
+        "items": [
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 76,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 77,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Upstream error from Parasail: Engine loop is not running. Inspect the stacktrace to find the original error: TypeError('isinstance() argument 2 cannot be a parameterized generic').",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 78,
+        "correct": true,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": true
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 79,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 80,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 81,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 82,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 83,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 84,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 85,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "pig"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 86,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 87,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 88,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": false,
+            "error_type": "api_error",
+            "error_message": "Upstream error from Parasail: Engine loop is not running. Inspect the stacktrace to find the original error: TypeError('isinstance() argument 2 cannot be a parameterized generic').",
+            "model_correct": false
+        }
+    },
+    {
+        "id": 89,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 90,
+        "correct": true,
+        "items": [
+            {
+                "label": "pig",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "dog",
+                "image": "dog"
+            },
+            {
+                "label": "cat",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 91,
+        "correct": true,
+        "items": [
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": false
+        }
+    },
+    {
+        "id": 92,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            },
+            {
+                "label": "cow",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 93,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 94,
+        "correct": false,
+        "items": [
+            {
+                "label": "pig",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 95,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 96,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 97,
+        "correct": false,
+        "items": [
+            {
+                "label": "dog",
+                "image": "cat"
+            },
+            {
+                "label": "cat",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 98,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cat"
+            },
+            {
+                "label": "dog",
+                "image": "pig"
+            },
+            {
+                "label": "cow",
+                "image": "cow"
+            },
+            {
+                "label": "pig",
+                "image": "dog"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 99,
+        "correct": false,
+        "items": [
+            {
+                "label": "cow",
+                "image": "dog"
+            },
+            {
+                "label": "dog",
+                "image": "cow"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    },
+    {
+        "id": 100,
+        "correct": false,
+        "items": [
+            {
+                "label": "cat",
+                "image": "cow"
+            },
+            {
+                "label": "cow",
+                "image": "pig"
+            },
+            {
+                "label": "pig",
+                "image": "cat"
+            }
+        ],
+        "result": {
+            "success": true,
+            "model_response": {
+                "all_labels_correct": false
+            },
+            "model_correct": true
+        }
+    }
+]

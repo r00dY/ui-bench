@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Data Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui;
+            line-height: 1.6;
+            padding-top: 40px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        .navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            height: 40px;
+            padding: 0 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            justify-content: space-between;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+        }
+        
+        .model-select-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-left: 12px;
+        }
+        
+        .model-select {
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #6c757d;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+        
+        .model-select:focus {
+            outline: none;
+        }
+        
+        .section-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #6c757d;
+            transition: color 0.2s;
+            margin-right: 5px;
+        }
+        
+        .section-button:hover {
+            color: #495057;
+            text-decoration: underline;
+        }
+        
+        .section-button.active {
+            color: #007bff;
+            font-weight: 500;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .reference-column {
+            width: 50%;
+            top: 40px;
+            padding: 12px;
+            padding-top: 24px;
+            z-index: 10;
+            background: white;
+        }
+        
+        .variants-column {
+            width: 50%;
+            padding: 12px;
+            padding-top: 24px;
+        }
+        
+        .reference-container {
+            position: sticky;
+            top: calc(40px + 24px);
+        }
+
+        .reference-container h2 {
+            margin-bottom: 12px;
+        }
+        
+        .reference-image {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        
+        .reference-link {
+            display: block;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .reference-link:hover {
+            text-decoration: underline;
+        }
+        
+        .variant-item {
+            margin-bottom: 200px;
+            padding-bottom: 20px;
+        }
+
+        .variant-item:last-child {
+            margin-bottom: 100vh;
+        }
+        
+        .variant-title {
+            margin-bottom: 12px;
+        }
+        
+        .variant-image {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        
+        .variant-link {
+            display: block;
+            margin-bottom: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .variant-link:hover {
+            text-decoration: underline;
+        }
+        
+        .variant-changes {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+        
+        .no-section {
+            padding: 12px;
+            margin-top: 24px;
+            /* font-size: 18px; */
+        }
+
+        .model-results {
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+        
+        .result-card {
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .result-card.success {
+            background-color: rgba(0, 128, 0, 0.1);
+        }
+        
+        .result-card.fail {
+            background-color: rgba(255, 0, 0, 0.1);
+        }
+        
+        .result-card.neutral {
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+        
+        .result-title {
+            font-size: 16px;
+        }
+
+        .result-card.fail .result-title {
+            color: #721c24;
+        }
+
+        .result-card.success .result-title {
+            color: #155724;
+        }
+
+        .result-card.neutral .result-title {
+            color: #555;
+        }
+
+        .result-section {
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        
+        .result-section-title {
+            font-weight: 400;
+            font-size: 16px;
+            opacity: 0.8;
+            margin-bottom: 4px;
+        }
+        
+        .result-links {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .result-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .result-link:hover {
+            text-decoration: underline;
+        }
+        
+        .result-css {
+            font-family: monospace;
+            white-space: pre-wrap;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .result-error {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 6px;
+        }
+        
+        .result-reasoning {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        /* Media query for mobile */
+        /* @media (max-width: 767px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .reference-column {
+                width: 100%;
+                height: auto;
+                position: sticky;
+            }
+            
+            .variants-column {
+                width: 100%;
+                max-height: none;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="navigation" id="navigation">
+        <div class="nav-buttons" id="nav-buttons">
+            <!-- Navigation buttons will be generated here -->
+        </div>
+        <div class="model-select-container">
+            <select id="model-select" class="model-select">
+                <option value="">Don't show results</option>
+                <option value="anthropic_claude-3.7-sonnet">anthropic/claude-3.7-sonnet</option>
+                <option value="openai_chatgpt-4o-latest">openai/chatgpt-4o-latest</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="content" id="content">
+        <!-- Content will be loaded here -->
+    </div>
+
+    <script>
+        // Define all available sections
+        const sections = [
+            'linear.section1',
+            'linear.section2',
+            'linear.section3',
+            'pangaia.section1',
+            'pangaia.section2',
+            'pangaia.section3',
+            'glossier.section1',
+            'glossier.section2',
+            'glossier.section3'
+        ];
+        
+        // Parse URL parameters
+        function getUrlParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        
+        // Initialize the navigation
+        function initNavigation() {
+            const navButtons = document.getElementById('nav-buttons');
+            const currentSection = getUrlParam('section');
+            
+            sections.forEach(section => {
+                const button = document.createElement('button');
+                button.className = 'section-button';
+                if (section === currentSection) {
+                    button.classList.add('active');
+                }
+                button.textContent = section;
+                button.addEventListener('click', () => {
+                    const currentModel = getUrlParam('model') || '';
+                    window.location.href = `?section=${section}${currentModel ? `&model=${currentModel}` : ''}`;
+                });
+                navButtons.appendChild(button);
+            });
+            
+            // Scroll to active navigation item
+            const activeButton = navButtons.querySelector('.section-button.active');
+            if (activeButton) {
+                activeButton.scrollIntoView({ block: 'nearest' });
+            }
+            
+            // Set up model select
+            const modelSelect = document.getElementById('model-select');
+            const currentModel = getUrlParam('model') || '';
+            modelSelect.value = currentModel;
+            
+            modelSelect.addEventListener('change', () => {
+                const selectedModel = modelSelect.value;
+                const currentSection = getUrlParam('section') || '';
+                
+                if (currentSection) {
+                    window.location.href = `?section=${currentSection}${selectedModel ? `&model=${selectedModel}` : ''}`;
+                } else {
+                    window.location.href = selectedModel ? `?model=${selectedModel}` : window.location.pathname;
+                }
+            });
+        }
+        
+        // Load section data
+        async function loadSectionData() {
+            const contentDiv = document.getElementById('content');
+            const section = getUrlParam('section');
+            const model = getUrlParam('model');
+            
+            if (!section) {
+                contentDiv.innerHTML = '<div class="no-section">Please select a section from the navigation above</div>';
+                return;
+            }
+            
+            const [projectId, sectionId] = section.split('.');
+            
+            try {
+                // Fetch config.json
+                
+                const rootPath = window.location.origin + window.location.pathname.split('?')[0].replace(/\/$/, '');
+
+                const configResponse = await fetch(`${rootPath}/${projectId}/pages/${sectionId}/config.json`);
+                const config = await configResponse.json();
+                
+                // Create the layout
+                contentDiv.innerHTML = `
+                    <div class="reference-column">
+                        <div class="reference-container">
+                            <h2>Reference</h2>
+                            <a href="${rootPath}/${projectId}/pages/${sectionId}/generated/reference.html" target="_blank">
+                                <img class="reference-image" src="${rootPath}/${projectId}/pages/${sectionId}/generated/reference.png" alt="Reference">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="variants-column" id="variants-container">
+                        <!-- Variants will be loaded here -->
+                    </div>
+                `;
+                
+                const variantsContainer = document.getElementById('variants-container');
+                
+                // Load each variant
+                if (config.variants && config.variants.length > 0) {
+                    config.variants.forEach(variant => {
+                        const variantDiv = document.createElement('div');
+                        variantDiv.className = 'variant-item';
+                        
+                        let variantHTML = `
+                            <h2 class="variant-title">${variant.id}</h2>
+                            <a href="${rootPath}/${projectId}/pages/${sectionId}/generated/${variant.id}/page.html" target="_blank">
+                                <img class="variant-image" src="${rootPath}/${projectId}/pages/${sectionId}/generated/${variant.id}/page.png" alt="${variant.id}">
+                            </a>
+                            <div class="variant-changes">${JSON.stringify(variant.css_changes, null, 2)}</div>
+
+                        `;
+                        
+                        // Add model results if a model is selected
+                        if (model) {
+                            variantHTML += `<div class="model-results" id="results-${variant.id}">
+                                <h3>Loading results...</h3>
+                            </div>`;
+                        }
+                        
+                        variantDiv.innerHTML = variantHTML;
+                        variantsContainer.appendChild(variantDiv);
+                        
+                        // Load model results if a model is selected
+                        if (model) {
+                            loadModelResults(projectId, sectionId, variant.id, model);
+                        }
+                    });
+                } else {
+                    variantsContainer.innerHTML += '<p>No variants found for this section.</p>';
+                }
+                
+            } catch (error) {
+                console.error('Error loading section data:', error);
+                contentDiv.innerHTML = `<div class="no-section">Error loading section data: ${error.message}</div>`;
+            }
+        }
+        
+        // Load model results for a specific variant
+        async function loadModelResults(projectId, sectionId, variantId, modelId) {
+            const resultsContainer = document.getElementById(`results-${variantId}`);
+            
+
+            
+
+            try {
+                // Fetch response.json
+                // Get the relative URL path without query parameters
+
+            
+                const rootPath = window.location.origin + window.location.pathname.split('?')[0].replace(/\/$/, '');
+                
+                const responseResponse = await fetch(`${rootPath}/${projectId}/pages/${sectionId}/generated/${variantId}/${modelId}/response.json`);
+                if (!responseResponse.ok) {
+                    if (responseResponse.status === 404) {
+                        resultsContainer.innerHTML = `<div class="result-card neutral">
+                            <div class="result-title">No results</div>
+                        </div>`;
+                        return;
+                    }
+                    throw new Error(`HTTP error ${responseResponse.status}`);
+                }
+                const responseData = await responseResponse.json();
+                
+                // Fetch result.json
+                const resultResponse = await fetch(`${rootPath}/${projectId}/pages/${sectionId}/generated/${variantId}/${modelId}/result.json`);
+                if (!resultResponse.ok) {
+                    if (resultResponse.status === 404) {
+                        resultsContainer.innerHTML = `<div class="result-card neutral">
+                            <div class="result-title">No results</div>
+                        </div>`;
+                        return;
+                    }
+                    throw new Error(`HTTP error ${resultResponse.status}`);
+                }
+                const resultData = await resultResponse.json();
+                
+                // Format and display the results
+                const isPassed = resultData.passed === true;
+                const resultClass = isPassed ? 'success' : 'fail';
+                const resultTitle = isPassed ? 'SUCCESS' : 'FAIL';
+                
+                let resultHTML = `
+                    <div class="result-card ${resultClass}">
+                        <div class="result-title">${resultTitle}</div>
+                `;
+                
+                if (responseData.css_changes) {
+                    resultHTML += `
+                        <div class="result-section">
+                            <div class="result-section-title">Response:</div>
+                            <div class="result-css">${JSON.stringify(responseData.css_changes, null, 2)}</div>
+                        </div>
+                    `;
+                }
+                if (responseData.reasoning) {
+                    resultHTML += `
+                        <div class="result-section">
+                            <div class="result-section-title">Reasoning:</div>
+                            <div class="result-reasoning">${responseData.reasoning}</div>
+                        </div>
+                    `;
+                }
+                
+                
+                
+                if (!isPassed && (resultData.error_code || resultData.error_details)) {
+                    resultHTML += `
+                        <div class="result-section">
+                            <div class="result-section-title">Errors:</div>
+
+                        <div class="result-error">
+                            ${resultData.error_code ? `<strong>Error Code:</strong> ${resultData.error_code}<br>` : ''}
+                            ${resultData.error_details ? `<strong>Details:</strong> ${resultData.error_details}` : ''}
+                        </div>
+                        </div>
+                    `;
+                }
+                
+                resultHTML += `
+                    <div class="result-links">
+                        <a href="${rootPath}/${projectId}/pages/${sectionId}/generated/${variantId}/prompt.html" target="_blank" class="result-link">Prompt</a> | 
+                        <a href="${rootPath}/${projectId}/pages/${sectionId}/generated/${variantId}/${modelId}/page.html" target="_blank" class="result-link">Corrected Page</a>
+                    </div>
+                `;
+                resultHTML += `</div>`;
+                
+                resultsContainer.innerHTML = resultHTML;
+                
+            } catch (error) {
+                console.error(`Error loading results for ${variantId}:`, error);
+                resultsContainer.innerHTML = `<div class="result-card fail">
+                    <div class="result-title">Error</div>
+                    <p>${error.message}</p>
+                </div>`;
+            }
+        }
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            initNavigation();
+            loadSectionData();
+        });
+    </script>
+</body>
+</html>

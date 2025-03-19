@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: mistralai/pixtral-12b
+  Total tests: 100
+  Successful tests: 99 (99.00%)
+  Correct tests: 75 (75.00%)
+
+Results saved to results/mistralai_pixtral-12b/results.json

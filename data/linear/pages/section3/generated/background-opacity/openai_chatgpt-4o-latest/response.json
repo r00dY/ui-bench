@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design has a weaker blur effect in the background when compared to the correct design. The blur effect applied using the `filter: blur(140px);` on `.bannerCentered__backgroundBlur` appears too strong, making the glow less pronounced. Reducing the blur value will make the background glow sharper and align it with the correct design.",
+    "css_changes": {
+        ".bannerCentered__backgroundBlur": {
+            "filter": "blur(120px)"
+        }
+    }
+}

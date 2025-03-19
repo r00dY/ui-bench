@@ -1,0 +1,8 @@
+{
+    "reasoning": "The main difference between the incorrect and correct designs is that in the incorrect design, the container is taking up 100% of the width without proper margins, making the grid expand to the full browser width. In the correct design, the container has a specific maximum width and is centered on the page with margins on both sides. The CSS property that needs to be fixed is the 'max-width' on the .container class - it's currently set to 'auto' but should have a specific pixel value.",
+    "css_changes": {
+        ".container": {
+            "max-width": "1200px"
+        }
+    }
+}

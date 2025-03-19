@@ -1,0 +1,8 @@
+{
+    "reasoning": "Looking at the two screenshots, the main visual difference is in the title text size. In the incorrect page, the title 'Activate Insights for your team' appears smaller than in the correct design. The bannerCentered__title class needs to have its font-size increased from the current 24px to match the larger size shown in the correct design.",
+    "css_changes": {
+        ".bannerCentered__title": {
+            "font-size": "48px"
+        }
+    }
+}

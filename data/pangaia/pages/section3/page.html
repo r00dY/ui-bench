@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Solution Driven Styles</title>
+
+    <link rel="stylesheet" href="/pangaia/global.css">
+
+    <style id="page-styles">
+
+.container {
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Spring Lookbook Section Styles */
+.collection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+}
+
+.collection__image {
+    min-width: 0;
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.collection__image--large {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="collection">
+            <img class="collection__image collection__image--large" src="/pangaia/images/collection_1.jpg">
+            <img class="collection__image" src="/pangaia/images/collection_2.jpg">
+            <img class="collection__image" src="/pangaia/images/collection_3.jpg">
+            <img class="collection__image" src="/pangaia/images/collection_4.jpg">
+            <img class="collection__image" src="/pangaia/images/collection_5.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

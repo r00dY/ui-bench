@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design shows the 'Glossier' logo with a different font style compared to the correct design. In the incorrect version, the logo appears italicized, whereas in the correct design, it is in a regular font style. The issue comes from a wrong font-weight or font-style applied to the '.header__logo' element.",
+    "css_changes": {
+        ".header__logo": {
+            "font-style": "normal"
+        }
+    }
+}

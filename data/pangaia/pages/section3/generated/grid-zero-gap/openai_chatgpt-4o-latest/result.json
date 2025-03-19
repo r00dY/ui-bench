@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .collection -> gap:\nExpected (reference): 12px\nGot (corrected): 16px"
+}

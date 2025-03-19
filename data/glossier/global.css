@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Light.woff?v=20913981759846774721738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-LightItalic.woff?v=68446011202050247651738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu.woff?v=27749520405110232131738248833') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Italic.woff?v=167501330633256636311738248833') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Medium.woff?v=135256279722417433531738248833') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-MediumItalic.woff?v=166049247236756587401738248833') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Bold.woff?v=77441056927343755651738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-BoldItalic.woff?v=182358319762879638931738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu Mono';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Mono.woff?v=95926578357820724491738248833') format('woff2');
+    font-weight: 400 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-bold.woff2?v=1652966868') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-medium.woff2?v=1679586878') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-regular.woff2?v=1652966868') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.body--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}

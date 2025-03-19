@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .buttonLink -> margin-bottom, unneccessary: .reviewBanner -> grid-template-columns"
+}

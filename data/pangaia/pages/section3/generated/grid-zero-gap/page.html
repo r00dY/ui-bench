@@ -1,0 +1,115 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Discover Solution Driven Styles
+  </title>
+  <style id="global-styles">
+   @font-face {
+    font-family: "PANGAIA";
+    src: url("https://pangaia.com/cdn/shop/t/1551/assets/PANGAIA-Grade_01.woff2?v=32721373140275635091727263252");
+    font-style: normal;
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: "PANGAIA";
+    src: url("https://pangaia.com/cdn/shop/t/1551/assets/PANGAIA-Grade_02.woff2?v=172401703474427423871727263251");
+    font-style: normal;
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: "PANGAIA";
+    src: url("https://pangaia.com/cdn/shop/t/1551/assets/PANGAIA-Grade_03.woff2?v=38506809274471498061727263251");
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: "PANGAIA";
+    src: url("https://pangaia.com/cdn/shop/t/1551/assets/PANGAIA-Grade_04.woff2?v=31821152012559998481727263252");
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "PANGAIA";
+    src: url("https://pangaia.com/cdn/shop/t/1551/assets/PANGAIA-Grade_05.woff2?v=94136820333106319611727263252");
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "PANGAIA";
+    src: url("https://pangaia.com/cdn/shop/t/1551/assets/PANGAIA-Grade_06.woff2?v=120107790134534018011727263252");
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: "HW Cigars";
+    src: url("https://pangaia.com/cdn/shop/t/1551/assets/HW-Cigars_Regular.woff2?v=145459754128349399961727263249");
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+  </style>
+  <style id="page-styles">
+   .container {
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+    width: 100%;
+}
+
+.collection__image {
+    min-width: 0;
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.collection__image--large {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="collection">
+    <img class="collection__image collection__image--large" src="/pangaia/images/collection_1.jpg"/>
+    <img class="collection__image" src="/pangaia/images/collection_2.jpg"/>
+    <img class="collection__image" src="/pangaia/images/collection_3.jpg"/>
+    <img class="collection__image" src="/pangaia/images/collection_4.jpg"/>
+    <img class="collection__image" src="/pangaia/images/collection_5.jpg"/>
+   </div>
+  </div>
+ </body>
+</html>

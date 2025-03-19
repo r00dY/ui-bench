@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .card__title -> font-size:\nExpected (reference): 18px\nGot (corrected): 28px"
+}

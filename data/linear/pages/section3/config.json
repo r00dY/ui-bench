@@ -1,0 +1,196 @@
+{
+    "variants": [
+        {
+          "id": "title-too-large",
+          "css_changes": {
+            ".bannerCentered__title": {
+              "font-size": "90px"
+            }
+          }
+        },
+        {
+          "id": "title-too-small",
+          "css_changes": {
+            ".bannerCentered__title": {
+              "font-size": "24px"
+            }
+          }
+        },
+        {
+          "id": "title-font-weight-too-light",
+          "css_changes": {
+            ".bannerCentered__title": {
+              "font-weight": "400"
+            }
+          }
+        },
+        {
+          "id": "title-color",
+          "css_changes": {
+            ".bannerCentered__title": {
+              "color": "rgb(130, 143, 255)"
+            }
+          }
+        },
+        {
+          "id": "description-color",
+          "css_changes": {
+            ".bannerCentered__description": {
+              "color": "white"
+            }
+          }
+        },
+        {
+          "id": "description-font-size",
+          "css_changes": {
+            ".bannerCentered__description": {
+              "font-size": "22px"
+            }
+          }
+        },
+        {
+          "id": "description-line-height",
+          "css_changes": {
+            ".bannerCentered__description": {
+              "line-height": "1.1"
+            }
+          }
+        },
+        {
+          "id": "description-font-weight",
+          "css_changes": {
+            ".bannerCentered__description": {
+              "font-weight": "500"
+            }
+          }
+        },
+        {
+          "id": "title-gap-tiny",
+          "css_changes": {
+            ".bannerCentered__title": {
+              "margin-bottom": "0px"
+            }
+          }
+        },
+        {
+          "id": "title-gap-huge",
+          "css_changes": {
+            ".bannerCentered__title": {
+              "margin-bottom": "60px"
+            }
+          }
+        },
+        {
+          "id": "stack-alignment",
+          "css_changes": {
+            ".bannerCentered__content": {
+              "align-items": "flex-start"
+            },
+            ".bannerCentered__description": {
+              "text-align": "left"
+            },
+            ".bannerCentered__title": {
+              "text-align": "left"
+            }
+          }
+        },
+        {
+            "id": "background-opacity",
+            "css_changes": {
+                ".bannerCentered__backgroundBlur": {
+                    "opacity": "1"
+                }
+            }
+        },
+        {
+            "id": "button-group-gap",
+            "css_changes": {
+                ".bannerCentered__buttonGroup": {
+                    "gap": "40px"
+                }
+            }
+        },
+        {
+            "id": "button-padding-large",
+            "css_changes": {
+                ".buttonLink": {
+                    "padding-left": "40px",
+                    "padding-right": "40px"
+                }
+            }
+        },
+        {
+            "id": "button-padding-small",
+            "css_changes": {
+                ".buttonLink": {
+                    "padding-left": "4px",
+                    "padding-right": "4px"
+                }
+            }
+        },
+        {
+            "id": "button-secondary-border-zero",
+            "css_changes": {
+                ".buttonLink--secondary": {
+                    "border-width": "0px"
+                }
+            }
+        },
+        {
+            "id": "button-secondary-border-large",
+            "css_changes": {
+                ".buttonLink--secondary": {
+                    "border-width": "2px"
+                }
+            }
+        },
+        {
+            "id": "button-background-color",
+            "css_changes": {
+                ".buttonLink": {
+                    "background-color": "rgba(255, 255, 255, 0.15)"
+                }
+            }
+        },
+        {
+            "id": "button-font",
+            "css_changes": {
+                ".buttonLink": {
+                    "font-size": "12px"
+                }
+            }
+        },
+        {
+            "id": "button-height",
+            "css_changes": {
+                ".buttonLink": {
+                    "height": "28px"
+                }
+            }
+        },
+        {
+            "id": "link-color",
+            "css_changes": {
+                ".link": {
+                    "color": "white"
+                }
+            }
+        },
+        {
+            "id": "link-font-weight",
+            "css_changes": {
+                ".link": {
+                    "font-weight": "400"
+                }
+            }
+        },
+        {
+            "id": "link-text-decoration",
+            "css_changes": {
+                ".link": {
+                    "text-decoration-line": "underline"
+                }
+            }
+        }
+    ]
+}

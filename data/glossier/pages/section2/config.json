@@ -1,0 +1,105 @@
+{
+    "variants": [
+
+        {
+            "id": "notification-font-size",
+            "css_changes": {
+                ".header__notificationBar-content": {
+                    "font-size": "16px"
+                }
+            }
+        },
+        {
+            "id": "notification-padding",
+            "css_changes": {
+                ".header__notificationBar": {
+                    "padding-top": "8px",
+                    "padding-bottom": "8px"
+                }
+            }
+        },
+        {
+            "id": "notification-justify-content",
+            "css_changes": {
+                ".header__notificationBar": {
+                    "justify-content": "flex-start"
+                }
+            }
+        },
+        {
+            "id": "link-color",
+            "css_changes": {
+                ".link": {
+                    "color": "#9d9d9d"
+                }
+            }
+        },
+        {
+            "id": "logo-width",
+            "css_changes": {
+                ".header__logo": {
+                    "width": "120px",
+                    "height": "auto"
+                }
+            }
+        },
+        {
+            "id": "header-padding-low",
+            "css_changes": {
+                ".header__main": {
+                    "padding-left": "8px",
+                    "padding-right": "8px"
+                }
+            }
+        },
+        {
+            "id": "header-padding-high",
+            "css_changes": {
+                ".header__main": {
+                    "padding-left": "40px",
+                    "padding-right": "40px"
+                }
+            }
+        },
+        {
+            "id": "nav-gap",
+            "css_changes": {
+                ".header__links": {
+                    "gap": "6px"
+                }
+            }
+        },
+        {
+            "id": "nav-link-font-size",
+            "css_changes": {
+                ".header__link": {
+                    "font-size": "16px"
+                }
+            }
+        },
+        {
+            "id": "nav-link-font-weight",
+            "css_changes": {
+                ".header__link": {
+                    "font-weight": "600"
+                }
+            }
+        },
+        {
+            "id": "link-gap",
+            "css_changes": {
+                ".header__link": {
+                    "gap": "0"
+                }
+            }
+        },
+        {
+            "id": "actions-justify",
+            "css_changes": {
+                ".header__links--actions": {
+                    "justify-content": "center"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+
+===== TEST RESULTS SUMMARY =====
+
+Model: deepseek/deepseek-chat
+  Total tests: 100
+  Successful tests: 100 (100.00%)
+  Correct tests: 65 (65.00%)
+
+Results saved to results/deepseek_deepseek-chat/results.json

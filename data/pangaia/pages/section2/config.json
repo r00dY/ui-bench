@@ -1,0 +1,71 @@
+{
+  "variants": [
+    {
+      "id": "title-line-height",
+      "css_changes": {
+        ".lookbook__title": {
+          "line-height": "1"
+        }
+      }
+    },
+    {
+      "id": "fonts",
+      "css_changes": {
+        ".lookbook__title": {
+          "font-family": "'PANGAIA', sans-serif"
+        },
+        ".lookbook__paragraph": {
+          "font-family": "'PANGAIA', sans-serif"
+        }
+      }
+    },
+    {
+      "id": "paragraph-line-height",
+      "css_changes": {
+        ".lookbook__paragraph": {
+          "line-height": "2"
+        }
+      }
+    },
+    {
+      "id": "text-max-width",
+      "css_changes": {
+        ".lookbook__content": {
+          "max-width": "auto"
+        }
+      }
+    },
+    {
+      "id": "image-aspect-ratio",
+      "css_changes": {
+        ".lookbook__image": {
+          "aspect-ratio": "16/9"
+        }
+      }
+    },
+    {
+      "id": "layout-column",
+      "css_changes": {
+        ".lookbook": {
+          "flex-direction": "column"
+        }
+      }
+    },
+    {
+      "id": "text-align-top",
+      "css_changes": {
+        ".lookbook__content": {
+          "justify-content": "flex-start"
+        }
+      }
+    },
+    {
+      "id": "image-width",
+      "css_changes": {
+        ".lookbook__imageContainer": {
+          "width": "33%"
+        }
+      }
+    }
+  ]
+}

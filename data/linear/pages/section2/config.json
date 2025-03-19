@@ -1,0 +1,152 @@
+{
+  "variants": [
+    {
+      "id": "card-spacing-small",
+      "css_changes": {
+        ".card--first": {
+          "padding-right": "8px"
+        },
+        ".card--second": {
+          "padding-left": "8px"
+        }
+      }
+    },
+    {
+      "id": "card-spacing-large",
+      "css_changes": {
+        ".card--first": {
+          "padding-right": "120px"
+        },
+        ".card--second": {
+          "padding-left": "120px"
+        }
+      }
+    },
+    {
+      "id": "card-all-gaps",
+      "css_changes": {
+        ".card": {
+          "padding-top": "8px",
+          "padding-bottom": "8px"
+        },
+        ".card--first": {
+          "padding-right": "8px"
+        },
+        ".card--second": {
+          "padding-left": "8px"
+        }
+      }
+    },
+    {
+      "id": "font-size-small",
+      "css_changes": {
+        ".card__title": {
+          "font-size": "14px"
+        },
+        ".card__description": {
+          "font-size": "12px"
+        }
+      }
+    },
+    {
+      "id": "font-size-large",
+      "css_changes": {
+        ".card__title": {
+          "font-size": "40px"
+        },
+        ".card__description": {
+          "font-size": "24px"
+        }
+      }
+    },
+    {
+      "id": "title-gap-small",
+      "css_changes": {
+        ".card__title": {
+          "margin-bottom": "1px"
+        }
+      }
+    },
+    {
+      "id": "title-gap-large",
+      "css_changes": {
+        ".card__title": {
+          "margin-bottom": "40px"
+        }
+      }
+    },
+    {
+      "id": "image-gap-small",
+      "css_changes": {
+        ".card__image": {
+          "margin-bottom": "0px"
+        }
+      }
+    },
+    {
+      "id": "image-gap-large",
+      "css_changes": {
+        ".card__image": {
+          "margin-bottom": "80px"
+        }
+      }
+    },
+    {
+      "id": "border-none",
+      "css_changes": {
+        ".twoCards": {
+          "border-top-style": "none",
+          "border-bottom-style": "none"
+        },
+        ".card--first": {
+          "border-right-style": "none"
+        }
+      }
+    },
+    {
+      "id": "border-no-central-line",
+      "css_changes": {
+        ".card--first": {
+          "border-right-style": "none"
+        }
+      }
+    },
+    {
+      "id": "border-width-large",
+      "css_changes": {
+        ".twoCards": {
+          "border-top-width": "2px",
+          "border-bottom-width": "2px"
+        },
+        ".card--first": {
+          "border-right-width": "2px"
+        }
+      }
+    },
+    {
+      "id": "border-central-line-gap",
+      "css_changes": {
+        ".twoCards": {
+          "padding-top": "24px",
+          "padding-bottom": "24px"
+        },
+        ".card": {
+          "padding-top": "24px",
+          "padding-bottom": "24px"
+        }
+      }
+    },
+    {
+      "id": "border-color",
+      "css_changes": {
+        ".twoCards": {
+          "border-top-color": "rgba(255, 255, 255, 0.3)",
+          "border-bottom-color": "rgba(255, 255, 255, 0.3)"
+        },
+        ".card--first": {
+          "border-right-color": "rgba(255, 255, 255, 0.3)"
+        }
+      }
+    }
+  ]
+}

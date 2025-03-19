@@ -1,0 +1,8 @@
+{
+    "reasoning": "When comparing the incorrect and correct images, I can see that the line height of the banner description text is different. In the incorrect version, the text appears more compressed vertically with less space between lines, while in the correct version the text has more appropriate spacing between lines. This indicates that the line-height property for the .banner__description class needs to be adjusted.",
+    "css_changes": {
+        ".banner__description": {
+            "line-height": "1.5"
+        }
+    }
+}

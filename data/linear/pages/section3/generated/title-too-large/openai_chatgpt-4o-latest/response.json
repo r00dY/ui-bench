@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design has a larger title text compared to the correct design. The font size of the '.bannerCentered__title' is too large, causing the text to appear more prominent than it should be. Adjusting the font-size to a smaller value will align it with the correct design.",
+    "css_changes": {
+        ".bannerCentered__title": {
+            "font-size": "72px"
+        }
+    }
+}

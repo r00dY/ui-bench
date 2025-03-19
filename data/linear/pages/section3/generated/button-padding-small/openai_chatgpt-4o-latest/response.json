@@ -1,0 +1,8 @@
+{
+    "reasoning": "The incorrect design shows that the background blur effect is weaker compared to the correct design. Specifically, the blur effect for the .bannerCentered__backgroundBlur element appears less intense, making the text stand out less. The issue is caused by an insufficient blur amount in the filter property.",
+    "css_changes": {
+        ".bannerCentered__backgroundBlur": {
+            "filter": "blur(180px)"
+        }
+    }
+}

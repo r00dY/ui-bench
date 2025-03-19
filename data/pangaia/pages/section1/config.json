@@ -1,0 +1,79 @@
+{
+  "test__corrected_css": {
+    ".cardsGrid": {
+      "gap": "13px",
+      "grid-template-columns": "repeat(4, 1fr)"
+    },
+    ".card__image": {
+      "aspect-ratio": "74 / 100",
+      "background-color": "#f9f7f7"
+    }
+  },
+  "variants": [
+    {
+      "id": "gap",
+      "css_changes": {
+        ".cardsGrid": {
+          "gap": "1px"
+        }
+      }
+    },
+    {
+      "id": "aspect-ratio",
+      "css_changes": {
+        ".card__image": {
+          "aspect-ratio": "1/1"
+        }
+      }
+    },
+    {
+      "id": "grid-cols",
+      "css_changes": {
+        ".cardsGrid": {
+          "grid-template-columns": "1fr 1fr"
+        }
+      }
+    },
+    {
+      "id": "header-font",
+      "css_changes": {
+        ".header__title": {
+          "font-family": "'PANGAIA', sans-serif",
+          "font-size": "40px"
+        }
+      }
+    },
+    {
+      "id": "header-margin",
+      "css_changes": {
+        ".header": {
+          "margin-bottom": "8px"
+        }
+      }
+    },
+    {
+      "id": "link-underline",
+      "css_changes": {
+        ".link": {
+          "text-decoration-line": "none"
+        }
+      }
+    },
+    {
+      "id": "header-color",
+      "css_changes": {
+        ".header__title": {
+          "color": "rgb(77, 172, 79)"
+        }
+      }
+    },
+    {
+      "id": "card-background-color",
+      "css_changes": {
+        ".card__image": {
+          "background-color": "rgb(87, 87, 87)"
+        }
+      }
+    }
+  ]
+}

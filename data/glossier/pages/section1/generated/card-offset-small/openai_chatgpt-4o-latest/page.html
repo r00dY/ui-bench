@@ -1,0 +1,217 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style id="global-styles">
+   @font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Light.woff?v=20913981759846774721738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-LightItalic.woff?v=68446011202050247651738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu.woff?v=27749520405110232131738248833') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Italic.woff?v=167501330633256636311738248833') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Medium.woff?v=135256279722417433531738248833') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-MediumItalic.woff?v=166049247236756587401738248833') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Bold.woff?v=77441056927343755651738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-BoldItalic.woff?v=182358319762879638931738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu Mono';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Mono.woff?v=95926578357820724491738248833') format('woff2');
+    font-weight: 400 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-bold.woff2?v=1652966868') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-medium.woff2?v=1679586878') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-regular.woff2?v=1652966868') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.body--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+  </style>
+  <style id="page-styles">
+   .hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.hero__logo {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+}
+
+.hero__content {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 350px;
+}
+
+.hero__subtitle {
+    font-family: 'Apercu', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    color: black;
+    margin-bottom: 14px;
+}
+
+.hero__title {
+    font-family: 'Apercu', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.hero__description {
+    font-family: 'Apercu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.buttonLink {
+    font-family: 'Apercu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: black;
+    background-color: #e8e8e8;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-left-color: black;
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-top-color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration-line: none;
+    display: inline-block;
+}
+  </style>
+ </head>
+ <body class="body--no-padding">
+  <div class="hero">
+   <img alt="Milky Jelly Cleansing Balm" class="hero__image" src="/glossier/images/homepage.avif"/>
+   <div class="hero__content">
+    <div class="hero__subtitle">
+     NEW!
+    </div>
+    <h2 class="hero__title">
+     Milky Jelly Cleansing Balm
+    </h2>
+    <p class="hero__description">
+     A nourishing and transformative gel-balm cleanser that gently melts away makeup, SPF and impurities.
+    </p>
+    <a class="buttonLink" href="/products/milky-jelly-cleansing-balm">
+     Shop now
+    </a>
+   </div>
+   <img alt="Glossier" class="hero__logo" src="/glossier/images/logo.avif"/>
+  </div>
+ </body>
+</html>

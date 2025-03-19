@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .buttonLink -> padding-right, .buttonLink -> padding-left, unneccessary: .bannerCentered__buttonGroup -> margin-top"
+}

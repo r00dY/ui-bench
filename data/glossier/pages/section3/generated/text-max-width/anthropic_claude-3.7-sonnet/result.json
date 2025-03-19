@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_value",
+  "error_details": "Invalid value for .reviewBanner__reviewText -> max-width:\nExpected (reference): 220px\nGot (corrected): 350px"
+}

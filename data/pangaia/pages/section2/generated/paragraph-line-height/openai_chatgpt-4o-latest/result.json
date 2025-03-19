@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_code": "wrong_css_properties",
+  "error_details": "missing: .lookbook__paragraph -> line-height, unneccessary: .lookbook__title -> font-size"
+}

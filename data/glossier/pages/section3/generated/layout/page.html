@@ -1,0 +1,228 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style id="global-styles">
+   @font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Light.woff?v=20913981759846774721738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-LightItalic.woff?v=68446011202050247651738248833') format('woff2');
+    font-weight: 200 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu.woff?v=27749520405110232131738248833') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Italic.woff?v=167501330633256636311738248833') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Medium.woff?v=135256279722417433531738248833') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-MediumItalic.woff?v=166049247236756587401738248833') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Bold.woff?v=77441056927343755651738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-BoldItalic.woff?v=182358319762879638931738248833') format('woff2');
+    font-weight: 600 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu Mono';
+    src: url('https://www.glossier.com/cdn/shop/t/1185/assets/Apercu-Mono.woff?v=95926578357820724491738248833') format('woff2');
+    font-weight: 400 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-bold.woff2?v=1652966868') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-medium.woff2?v=1679586878') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.shopify.com/s/files/1/0627/9164/7477/files/font-apercupro-regular.woff2?v=1652966868') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.body--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+  </style>
+  <style id="page-styles">
+   .reviewBanner {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    position: relative;
+}
+
+.reviewBanner__image {
+    position: relative;
+    width: 100%;
+}
+
+.reviewBanner__title {
+    font-family: 'Apercu', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.reviewBanner__description {
+    font-family: 'Apercu', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.33;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.buttonLink {
+    font-family: 'Apercu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: black;
+    background-color: white;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-top-width: 0;
+    border-top-style: solid;
+    border-top-color: black;
+    border-left-width: 0;
+    border-left-style: solid;
+    border-left-color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration-line: none;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.reviewBanner__score {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.reviewBanner__reviewText {
+    font-family: 'Apercu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 220px;
+    margin-bottom: 16px;
+}
+
+.reviewBanner__reviewer {
+    font-family: 'Apercu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+  </style>
+ </head>
+ <body>
+  <div class="reviewBanner">
+   <div class="reviewBanner__content">
+    <div class="reviewBanner__title">
+     Our fragrances
+    </div>
+    <div class="reviewBanner__description">
+     Your favorite scents that will grow with you no matter where you are in your personal evolution.
+    </div>
+    <button class="buttonLink">
+     Shop now
+    </button>
+    <div class="reviewBanner__review">
+     <div class="reviewBanner__score">
+      <img alt="4.8" src="/glossier/images/star-full-black.svg"/>
+      <img alt="4.8" src="/glossier/images/star-full-black.svg"/>
+      <img alt="4.8" src="/glossier/images/star-full-black.svg"/>
+      <img alt="4.8" src="/glossier/images/star-full-black.svg"/>
+      <img alt="4.8" src="/glossier/images/star-full-black.svg"/>
+     </div>
+     <p class="reviewBanner__reviewText">
+      I absolutely love this perfume! It’s sweet and musky and the notes of plum make it the most unique perfume I have come across! one, two small spritzes will go a long way and last all day. It smells like the big sister version of ‘You’, still playful, a touch fruity, but mature and sultry.
+     </p>
+     <div class="reviewBanner__reviewer">
+      Jennifer, gifted Glossier You Rêve in exchange for an honest review.
+     </div>
+    </div>
+   </div>
+   <img class="reviewBanner__image" src="/glossier/images/fragrance.png"/>
+  </div>
+ </body>
+</html>

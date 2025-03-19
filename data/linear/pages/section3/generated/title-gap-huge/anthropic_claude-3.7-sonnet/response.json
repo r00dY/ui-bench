@@ -1,0 +1,8 @@
+{
+    "reasoning": "When comparing the incorrect and correct designs, I notice that the blur level of the background is different. In the incorrect design, the backdrop-filter blur effect appears to be much less (1px) than in the correct design. This makes the content less readable against the background. The backdrop-filter blur needs to be increased to match the correct design.",
+    "css_changes": {
+        ".bannerCentered__content": {
+            "backdrop-filter": "blur(20px)"
+        }
+    }
+}
